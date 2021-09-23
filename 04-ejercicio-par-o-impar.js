@@ -6,3 +6,4 @@ if (numero % 2 == 0) {
 }else{
     document.write("Tu número es impar >:(");
 }
+
