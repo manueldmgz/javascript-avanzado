@@ -2,15 +2,14 @@
 
 const numero1 = parseInt(prompt("Ingresa un número"));
 const numero2 = parseInt(prompt("Ingresa otro número"));
+let array_pares = [] 
+let array_impares = []
 
-if (numero1 < numero2) {
-
-    for (let i = numero1 + 1; i < numero2; i++) {
-
-        if (i % 2 !=0) {
-            document.write(i);
-        }
+for (let n = numero1; n <= numero2; n += 1) {
+    if (n % 2 !== 0) {
+        array_impares.push(n)
+    } else {
+        array_pares.push(n)
     }
-} else {
-    document.write("El segundo número debe ser mayor que el primero");
 }
+console.log(`Los números impares fueron ${array_impares}`)
